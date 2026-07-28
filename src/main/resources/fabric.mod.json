@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "betier",
+  "version": "${version}",
+  "name": "BETier",
+  "description": "对标Tiers模组，游戏内展示玩家段位，对接betierapi.ccwu.cc",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "icon": "assets/betier/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.betier.BETierClient"
+    ]
+  },
+  "mixins": [
+    "betier.mixins.json"
+  ],
+  "depends": {
+    "fabric-api": ">=0.112.1",
+    "minecraft": ">=1.21.1 <=1.21.11",
+    "java": ">=21"
+  }
+}
